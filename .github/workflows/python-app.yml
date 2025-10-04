@@ -8,8 +8,9 @@ on:
   #workflow_dispatch:
   # Or on a schedule
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/1  *  *  *  *'
   # Commented out to stop the web scrapping
+  workflow_dispatch:
 
 jobs:
   run-python-script:
