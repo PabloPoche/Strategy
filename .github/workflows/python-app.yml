@@ -5,7 +5,7 @@ name: Python application
 
 on:
   # Manually trigger the workflow  
-   workflow_dispatch:
+  # workflow_dispatch:
   # Or on a schedule
    schedule:
     - cron: "*/5 * * * *"
