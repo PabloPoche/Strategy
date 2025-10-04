@@ -1,7 +1,8 @@
 import requests
 
 requests.post("https://ntfy.sh/SRSISALMA",
-            data="BTC Alert",
+            data="Github",
             headers={ "Title": "SRSI & SALMA Strategy" })
+
 
 
