@@ -8,7 +8,7 @@ on:
   #workflow_dispatch:
   # Or on a schedule
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/1 * * * *'
   # Commented out to stop the web scrapping
 
 jobs:
