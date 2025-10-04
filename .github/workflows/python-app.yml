@@ -5,9 +5,9 @@ name: Python application
 
 on:
   # Manually trigger the workflow  
-   workflow_dispatch:
+  # workflow_dispatch:
   # Or on a schedule
-   schedule:
+  schedule:
     - cron: "*/5 * * * *"
   # Commented out to stop the web scrapping
 
