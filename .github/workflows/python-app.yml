@@ -8,7 +8,7 @@ on:
   # workflow_dispatch:
   # Or on a schedule
   schedule:
-    - cron: "*/5 * * * *"
+  - cron: "0 20 * * *"
   # Commented out to stop the web scrapping
 
 permissions:
