@@ -5,25 +5,24 @@ name: Python application
 
 on:
   # Manually trigger the workflow  
-  workflow_dispatch:
+  #workflow_dispatch:
   # Or on a schedule
   schedule:
-  - cron: "*/5 * * * *"
+    - cron: '0 0 * * *'
   # Commented out to stop the web scrapping
 
-permissions:
-  contents: read
-
 jobs:
-  scrape:
+  run-python-script:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
+    - name: Checkout repository
+      uses: actions/checkout@v4 # Use the latest version of actions/checkout
+
+    - name: Set up Python
+      uses: actions/setup-python@v5 # Use the latest version of actions/setup-python
       with:
-        python-version: "3.10"
+        python-version: '3.x' # Specify your desired Python version (e.g., '3.9', '3.10')
 
     - name: Install dependencies
       run: |
